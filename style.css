@@ -51,7 +51,11 @@ body{
 .heading img{
     width: 10%;
 }
-
+.songlist li.playing {
+    background-color: rgb(0, 0, 0);
+    filter: invert();
+  }
+  
 .h1{
     display: flex;
     gap: 6%;
