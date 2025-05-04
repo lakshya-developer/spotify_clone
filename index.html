@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container flex">
+      <div class="left  rounded">
+        <div class="home">
+            <div class="logo">
+                <img class="invert" src="img/logo.svg" alt="">
+                <img class="invert close" src="img/close.svg" alt="">
+            </div>
+            <ul class=" bg-color rounded p-1" style="padding: 5px 20px;">
+                <li class="m-1 hover-c pointer"><img class="invert" src="img/home.svg" alt="">Home</li>
+                <li class="m-1 hover-c pointer"><img class="invert" src="img/search.svg" alt="">Search</li>
+            </ul>
+        </div>
+        <div class="library flex bg-color  rounded">
+            <div class="heading p-1 ">
+                <div class="h1 flex hover-c pointer"><img class="invert" src="img/library.svg" alt=""></i>Your library</div>
+                <div class="h1-btn hover-c hover-bg pointer"><i class="fa-solid fa-plus"></i></div>
+                <div class="h1-btn hover-c hover-bg pointer"><i class="fa-solid fa-arrow-right"></i></div>
+            </div>
+            <div class="songlist pointer">
+              <ul>
+                
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="right rounded">
+        <div class="nav rounded">
+          <div class="hamburger invert"><img src="img/hamburger.svg" alt=""></div>
+          <div class="nav-left">
+            <div class="arrows pointer"><i class="fa-solid fa-chevron-left" style="color: #ffffff;"></i></div>
+            <div class="arrows pointer"><i class="fa-solid fa-angle-right" style="color: #ffffff;"></i></div>
+          </div>
+          <div class="nav-right">
+            <div class=" pointer">Sign Up</div>
+            <div class=" pointer">Login</div>
+            <div class=" pointer"><i class="fa-regular fa-circle-down" style="color: #ffffff;"></i>Install App</div>
+            <div class="bg-color pointer"><i class="fa-regular fa-bell" style="color: #ffffff;"></i></div>
+            <div class="arrows pointer"><i class="fa-regular fa-user" style="color: #ffffff;"></i></div>
+          </div>
+        </div>
+        <div class="spotifyplaylist">
+          <h2>Spotify Playlist</h2>
+          <div class="card-container">
+            
+          </div>
+        </div>
+        <div class="playbar rounded">
+          <div class="Sinfo">
+            <div class="songinfo"></div>
+            <div class="volume invert pointer">
+              <img id="volume-img" src="img/volume.svg" alt="">
+              <input class="pointer" type="range" name="volume" value="100">
+            </div>
+            <div class="songbutton">
+              <img id="previous" class="pointer invert" src="img/prevsong.svg" alt="">
+              <img id="play" class="pointer invert" src="img/play.svg" alt="">
+              <img id="next" class="pointer invert"  src="img/nextsong.svg" alt="">
+            </div>
+            <div class="songtime"></div>
+          </div>
+          <div class="seekbar pointer">
+            <div class="circle pointer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
